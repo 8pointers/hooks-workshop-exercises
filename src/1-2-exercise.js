@@ -11,4 +11,8 @@ const Counter = () => {
   );
 };
 
-render(<Counter />, document.getElementById('root-1-1'));
+render(<Counter />, document.getElementById('root-1-2'));
+
+/*
+Change Counter component so that it can count both up and down.
+ */

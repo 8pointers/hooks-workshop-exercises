@@ -4,10 +4,8 @@
   "description": "Reactive Programming Workshop Exercises",
   "keywords": [
     "JavaScript",
-    "Reactive Programming",
     "React",
-    "Redux",
-    "RxJS"
+    "Hooks"
   ],
   "scripts": {
     "start": "react-scripts start",

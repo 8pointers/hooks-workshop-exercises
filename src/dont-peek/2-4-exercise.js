@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 import { render } from 'react-dom';
 
 const initialState = { count: 0, isVisible: true };
-const reducer = (state, action) => {
+const reducer = (state = 0, action) => {
   if (action.type === 'INCREMENT') {
     return { ...state, count: state.count + 1 };
   } else if (action.type === 'TOGGLE') {
