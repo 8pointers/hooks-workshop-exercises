@@ -8,3 +8,12 @@
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## Running the app
+
+```bash
+git clone https://github.com/8pointers/hooks-workshop-exercises.git
+cd hooks-workshop-exercises
+npm ci
+npm start
+```
