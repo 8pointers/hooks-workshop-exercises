@@ -6,7 +6,9 @@ class Counter extends Component {
   render = () => (
     <>
       {this.state.count}
-      <button onClick={() => this.setState({ count: this.state.count + 1 })} />
+      <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+        +
+      </button>
     </>
   );
 }
