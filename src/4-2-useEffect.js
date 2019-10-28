@@ -13,7 +13,7 @@ const OnlineStatus = () => {
       console.log('Removing listeners');
       events.forEach(t => window.removeEventListener(t, listener));
     };
-  }, []);
+  });
   return <div>{isOnline ? '😀' : '🤕'}</div>;
 };
 
@@ -26,4 +26,4 @@ const Outer = () => {
   ];
 };
 
-render(<Outer />, document.getElementById('root-2-1'));
+render(<Outer />, document.getElementById('root-4-2'));

@@ -17,4 +17,4 @@ const OnlineStatus = () => {
   return <div>{isOnline ? '😀' : '🤕'}</div>;
 };
 
-render(<OnlineStatus />, document.getElementById('root-3'));
+render(<OnlineStatus />, document.getElementById('root-4-2'));

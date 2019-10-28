@@ -14,3 +14,11 @@ import './2-3-useState-useReducer-1.js';
 import './2-3-useState-useReducer-2.js';
 import './2-4-exercise.js';
 import './2-5-useLegacyState.js';
+
+import './3-0-render-prop.js';
+import './3-1-useCounter.js';
+
+import './4-0-effects.js';
+import './4-1-useEffect.js';
+import './4-2-useEffect.js';
+import './4-3-useEffect.js';
