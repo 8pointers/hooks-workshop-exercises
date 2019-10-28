@@ -21,5 +21,6 @@ const Counter = () => {
 render(<Counter />, document.getElementById('root-2-2'));
 
 /*
-Change Counter component (and the reducer too) so that it can count both up and down.
+  Change Counter component (and the reducer too) so that it can count both up and down.
+  Do it in more than one way (different reducer/onClick combo).
  */

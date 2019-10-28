@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { render } from 'react-dom';
 
 const events = ['online', 'offline'];
-
 const OnlineStatus = () => {
   const [isOnline, setIsOnline] = useState(window.navigator.onLine);
   useEffect(() => {
@@ -20,10 +19,12 @@ const OnlineStatus = () => {
 const Outer = () => {
   const [text, setText] = useState('Keep typing...');
   const onChange = event => setText(event.target.value);
-  return [
-    <input type="text" value={text} onChange={onChange} />,
-    text && <OnlineStatus />
-  ];
+  return (
+    <>
+      <input type="text" value={text} onChange={onChange} />
+      {text}
+      <OnlineStatus />
+    </>
+  );
 };
-
 render(<Outer />, document.getElementById('root-4-3'));
