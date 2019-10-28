@@ -26,3 +26,4 @@ import './4-3-useEffect.js';
 import './4-4-exercise.js';
 import './4-5-http.js';
 import './4-6-http-useEffect-deps.js';
+import './4-7-exercise.js';
