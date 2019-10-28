@@ -20,5 +20,6 @@ const Wrapper = () => {
 };
 render(<Wrapper />, document.getElementById('root-4-7'));
 /*
-  Create (extract) a custom useMessageOfTheDay hook and refactor MessageOfTheDay component accordingly.
+  Create (extract) a custom useMessageOfTheDay hook.
+  Refactor MessageOfTheDay component accordingly.
 */
