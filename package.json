@@ -20,15 +20,15 @@
   "author": "Damjan Vujnovic",
   "license": "UNLICENSED",
   "dependencies": {
-    "bootstrap": "4.3.1",
+    "bootstrap": "4.4.1",
     "classnames": "2.2.6",
-    "react": "16.11.0",
-    "react-dom": "16.11.0"
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
   },
   "devDependencies": {
     "http-proxy-middleware": "0.20.0",
-    "prettier": "1.18.2",
-    "react-scripts": "3.2.0"
+    "prettier": "1.19.1",
+    "react-scripts": "3.3.0"
   },
   "eslintConfig": {
     "extends": "react-app"
