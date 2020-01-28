@@ -6,7 +6,6 @@
 - NodeJS 12.14.1+ & NPM 6.13.4+
 - Recommended Visual Studio Code extensions:
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-  - [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## Running the app
