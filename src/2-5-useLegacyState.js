@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import { render } from 'react-dom';
 
 const useLegacyState = initialState =>
   useReducer((state, action) => ({ ...state, ...action }), initialState);
@@ -22,4 +21,4 @@ const Counter = () => {
   );
 };
 
-render(<Counter />, document.getElementById('root-2-5'));
+export default Counter;

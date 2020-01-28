@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { render } from 'react-dom';
 
 const events = ['online', 'offline'];
 const OnlineStatus = () => {
@@ -27,4 +26,5 @@ const Outer = () => {
     </>
   );
 };
-render(<Outer />, document.getElementById('root-4-3'));
+
+export default Outer;

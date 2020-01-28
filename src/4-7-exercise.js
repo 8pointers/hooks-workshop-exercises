@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { render } from 'react-dom';
 
 const MessageOfTheDay = ({ id }) => {
   const [message, setMessage] = useState();
@@ -18,7 +17,7 @@ const Wrapper = () => {
     </button>
   );
 };
-render(<Wrapper />, document.getElementById('root-4-7'));
+export default Wrapper;
 /*
   Create (extract) a custom useMessageOfTheDay hook.
   Refactor MessageOfTheDay component accordingly.

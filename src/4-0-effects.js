@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import { Component } from 'react';
 
 const events = ['online', 'offline'];
 class OnlineStatus extends Component {
@@ -11,4 +10,4 @@ class OnlineStatus extends Component {
     events.forEach(t => window.removeEventListener(t, this.onlineOfflineListener));
   render = () => (this.state.isOnline ? '😀' : '🤕');
 }
-render(<OnlineStatus />, document.getElementById('root-4-0'));
+export default OnlineStatus;

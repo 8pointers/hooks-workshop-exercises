@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import { fromEvent, merge, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -22,4 +21,4 @@ class OnlineStatus extends Component {
   render = () => <div>{this.state.isOnline ? '😀' : '🤕'}</div>;
 }
 
-render(<OnlineStatus />, document.getElementById('root-5-0'));
+export default OnlineStatus;

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { render } from 'react-dom';
 
 const events = ['online', 'offline'];
 const OnlineStatus = () => {
@@ -16,7 +15,7 @@ const OnlineStatus = () => {
   return <div>{isOnline ? '😀' : '🤕'}</div>;
 };
 
-render(<OnlineStatus />, document.getElementById('root-4-4'));
+export default OnlineStatus;
 /*
   Create a custom useOnline hook by encapsulating the effects logic from the OnlineStatus component
 */

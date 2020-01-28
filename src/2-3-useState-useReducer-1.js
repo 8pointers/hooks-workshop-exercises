@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import { render } from 'react-dom';
 
 const useState = initialState => useReducer((_, action) => action, initialState);
 
@@ -12,4 +11,5 @@ const Counter = () => {
     </>
   );
 };
-render(<Counter />, document.getElementById('root-2-3-1'));
+
+export default Counter;

@@ -1,5 +1,4 @@
 import React, { useState, Component } from 'react';
-import { render } from 'react-dom';
 
 class MessageOfTheDay extends Component {
   state = {};
@@ -23,4 +22,4 @@ const Wrapper = () => {
     </button>
   );
 };
-render(<Wrapper />, document.getElementById('root-4-5'));
+export default Wrapper;

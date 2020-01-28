@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import { render } from 'react-dom';
 
 const initialState = 0;
 const reducer = (state, action) => (action.type === 'INCREMENT' ? state + 1 : state);
@@ -13,4 +12,5 @@ const Counter = () => {
     </>
   );
 };
-render(<Counter />, document.getElementById('root-2-1'));
+
+export default Counter;

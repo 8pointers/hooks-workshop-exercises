@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import { render } from 'react-dom';
 
 const initialState = 0;
 const reducer = (state, action) => {
@@ -18,7 +17,8 @@ const Counter = () => {
     </>
   );
 };
-render(<Counter />, document.getElementById('root-2-2'));
+
+export default Counter;
 
 /*
   Change Counter component (and the reducer too) so that it can count both up and down.

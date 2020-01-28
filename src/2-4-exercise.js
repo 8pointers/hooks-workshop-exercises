@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { render } from 'react-dom';
 
-const Counter = () => {
+const ToggleableCounter = () => {
   const [{ count, isVisible }, setState] = useState({ count: 0, isVisible: true });
   return (
     <>
@@ -20,8 +19,8 @@ const Counter = () => {
   );
 };
 
-render(<Counter />, document.getElementById('root-2-4'));
+export default ToggleableCounter;
 
 /*
-  Refactor Counter component so that is using useReducer hook instead.
+  Refactor ToggleableCounter component so that is using useReducer hook instead.
 */

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 
 class Counter extends Component {
   state = { count: 0 };
@@ -12,4 +11,5 @@ class Counter extends Component {
     </>
   );
 }
-render(<Counter />, document.getElementById('root-1-0'));
+
+export default Counter;

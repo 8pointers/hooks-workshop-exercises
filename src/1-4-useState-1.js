@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { render } from 'react-dom';
 
 const Counter = () => {
   const [{ count, isVisible }, setState] = useState({ count: 0, isVisible: true });
@@ -20,4 +19,4 @@ const Counter = () => {
   );
 };
 
-render(<Counter />, document.getElementById('root-1-4-1'));
+export default Counter;

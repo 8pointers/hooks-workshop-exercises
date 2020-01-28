@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { render } from 'react-dom';
 
 const Problem = () => {
   const [number, setNumber] = useState(0);
@@ -16,4 +15,4 @@ const Problem = () => {
   );
 };
 
-render(<Problem />, document.getElementById('root-1-5'));
+export default Problem;

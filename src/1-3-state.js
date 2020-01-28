@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 
-class Counter extends Component {
+class ToggleableCounter extends Component {
   state = { count: 0, isVisible: true };
   render = () => (
     <>
@@ -20,4 +19,4 @@ class Counter extends Component {
   );
 }
 
-render(<Counter />, document.getElementById('root-1-3'));
+export default ToggleableCounter;
