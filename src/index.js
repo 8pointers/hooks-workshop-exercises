@@ -35,6 +35,9 @@ import OnlineStatusRXAsClass from './5-0-rxjs';
 import OnlineStatusRXWithUseEffect from './5-1-exercise';
 import OnlineStatusRXWithCustomHooks from './5-2-exercise';
 
+// import './ex-2';
+// import './ex-3';
+
 const App = () => (
   <Router>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">

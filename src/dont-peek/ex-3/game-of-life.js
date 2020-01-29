@@ -33,8 +33,8 @@ const useGameOfLife = () => {
 const GameOfLife = ({ n, width, height }) => {
   const { isCellAlive, toggleCellState, tick } = useGameOfLife();
   return (
-    <div style={{ width: n * width, height: n * height }}>
-      <div>
+    <div>
+      <div style={{ width: n * width, height: n * height }}>
         {Array.from({ length: n * n })
           .map((_, i) => ({ row: Math.floor(i / n), column: i % n }))
           .map(({ row, column }, index) => (

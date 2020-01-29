@@ -4,11 +4,11 @@ const events = ['online', 'offline'];
 const OnlineStatus = () => {
   const [isOnline, setIsOnline] = useState(window.navigator.onLine);
   useEffect(() => {
-    console.log('Adding listeners');
+    console.log('Adding listeners []');
     const listener = () => setIsOnline(window.navigator.onLine);
     events.forEach(t => window.addEventListener(t, listener));
     return () => {
-      console.log('Removing listeners');
+      console.log('Removing listeners []');
       events.forEach(t => window.removeEventListener(t, listener));
     };
   }, []);

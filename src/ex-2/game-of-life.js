@@ -37,8 +37,8 @@ class GameOfLife extends Component {
   render() {
     const { n, width, height } = this.props;
     return (
-      <div style={{ width: n * width, height: n * height }}>
-        <div>
+      <div>
+        <div style={{ width: n * width, height: n * height }}>
           {Array.from({ length: n * n })
             .map((_, i) => ({ row: Math.floor(i / n), column: i % n }))
             .map(({ row, column }, index) => (
