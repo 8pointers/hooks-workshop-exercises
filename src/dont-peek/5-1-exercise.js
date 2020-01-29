@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { render } from 'react-dom';
 import { fromEvent, merge, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -17,4 +16,4 @@ const OnlineStatus = () => {
   return <div>{isOnline ? '😀' : '🤕'}</div>;
 };
 
-render(<OnlineStatus />, document.getElementById('root-5-1'));
+export default OnlineStatus;

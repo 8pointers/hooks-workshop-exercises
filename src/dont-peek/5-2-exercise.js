@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { render } from 'react-dom';
 import { fromEvent, merge, of, timer } from 'rxjs';
 import { map, publishReplay, refCount } from 'rxjs/operators';
 
@@ -29,7 +28,7 @@ const counter$ = timer(0, 1000);
 const UseObservableDemo3 = () => <div>{useObservable(counter$)}</div>;
 
 const isOnline$ = merge(
-  of('startup'),
+  of('Start me up!'),
   ...['online', 'offline'].map(eventName => fromEvent(window, eventName))
 ).pipe(
   map(() => window.navigator.onLine),
@@ -40,13 +39,14 @@ const useIsOnline = () => useObservable(isOnline$);
 
 const OnlineStatus = () => <div>{useIsOnline() ? '😀' : '🤕'}</div>;
 
-render(
+const Demo = () => (
   <>
     <UseObservableDemo0 />
     <UseObservableDemo1 />
     <UseObservableDemo2 />
     <UseObservableDemo3 />
     <OnlineStatus />
-  </>,
-  document.getElementById('root-5-2')
+  </>
 );
+
+export default Demo;
