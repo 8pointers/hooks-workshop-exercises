@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { fromEvent, merge, of, timer } from 'rxjs';
-import { map, publishReplay, refCount } from 'rxjs/operators';
+import { ajax } from 'rxjs/ajax';
+import { map, publishReplay, refCount, switchMap, pluck } from 'rxjs/operators';
 
 const useObservable = observable$ => {
   const [value, setValue] = useState();
@@ -39,6 +40,12 @@ const useIsOnline = () => useObservable(isOnline$);
 
 const OnlineStatus = () => <div>{useIsOnline() ? '😀' : '🤕'}</div>;
 
+const motd$ = timer(0, 1000).pipe(
+  switchMap(id => ajax(`/api/motd?id=${id}`)),
+  pluck('response')
+);
+const MOTD = () => <div>{useObservable(motd$)}</div>;
+
 const Demo = () => (
   <>
     <UseObservableDemo0 />
@@ -46,6 +53,7 @@ const Demo = () => (
     <UseObservableDemo2 />
     <UseObservableDemo3 />
     <OnlineStatus />
+    <MOTD />
   </>
 );
 
